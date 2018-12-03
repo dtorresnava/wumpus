@@ -20,8 +20,31 @@ public class TableroController {
 		}
 		
 		introducirPozos(tablero,celda);
-		
+		colocarMuro(tablero, celda);
+		colocarWumpus(tablero, celda);
 		tablero.setCelda(celda);
+	}
+
+	private void colocarWumpus(Tablero tablero, Celda[][] celda) {
+		int fila = 0;
+		int columna = 0;
+		boolean wumpusHabilitado = false;
+		do {
+			fila = (int) Math.floor(Math.random()*tablero.getFila());
+			columna = (int) Math.floor(Math.random()*tablero.getColumna());
+			
+			if(!celda[fila][columna].isPozoHabilitado() && !celda[fila][columna].isMuroHabilitado()) {
+				celda[fila][columna].setWampusHabilitado(true);
+				wumpusHabilitado = true;
+			}			
+		}while(wumpusHabilitado == false);
+		
+		colocarEdor(tablero, celda);
+	}
+
+	private void colocarEdor(Tablero tablero, Celda[][] celda) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	private void introducirPozos(Tablero tablero, Celda celda[][]) {
@@ -35,8 +58,7 @@ public class TableroController {
 				celda[fila][columna].setPozoHabilitado(true);
 			}			
 		}
-		colocarBrisa(tablero, celda);
-		colocarMuro(tablero, celda);
+		colocarBrisa(tablero, celda);		
 	}
 
 	private void colocarMuro(Tablero tablero, Celda[][] celda) {
