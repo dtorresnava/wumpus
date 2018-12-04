@@ -2,14 +2,11 @@ package model;
 
 public class Celda {
 	
-	public final int WUMPUS = 0;
-	public final int MURO = 1;
-	public final int POZO = 2;
-	
 	private boolean wampusHabilitado;
 	private boolean muroHabilitado;
 	private boolean pozoHabilitado;
 	private boolean oroHabilitado;
+	private boolean jugadorHabilitado;
 	
 	private boolean brisaHabilitada;
 	private boolean edorHabilitado;
@@ -20,13 +17,14 @@ public class Celda {
 
 		
 	public Celda(boolean wampusHabilitado, boolean muroHabilitado, boolean pozoHabilitado, boolean oroHabilitado,
-			boolean brisaHabilitada, boolean edorHabilitado) {		
+			boolean brisaHabilitada, boolean edorHabilitado, boolean jugadorHabilitado) {		
 		this.wampusHabilitado = wampusHabilitado;
 		this.muroHabilitado = muroHabilitado;
 		this.pozoHabilitado = pozoHabilitado;
 		this.oroHabilitado = oroHabilitado;
 		this.brisaHabilitada = brisaHabilitada;
 		this.edorHabilitado = edorHabilitado;
+		this.jugadorHabilitado = jugadorHabilitado;
 	}
 
 
@@ -78,5 +76,11 @@ public class Celda {
 		this.edorHabilitado = edorHabilitado;
 	}
 
-	
+	public boolean isJugadorHabilitado() {
+		return jugadorHabilitado;
+	}
+
+	public void setJugadorHabilitado(boolean jugadorHabilitado) {
+		this.jugadorHabilitado = jugadorHabilitado;
+	}	
 }

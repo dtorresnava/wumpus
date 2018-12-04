@@ -5,9 +5,10 @@ public class Tablero {
 	private int fila;
 	private int columna;
 	
-	private int numeroDeWampus;
-	private int numeroDeMuros;
 	private int numeroDePozos;
+	
+	private int coordenadaFilaJugador;
+	private int coordenadaColumnaJugador;
 	
 	private Celda celda[][];
 	
@@ -32,22 +33,6 @@ public class Tablero {
 		this.columna = columna;
 	}
 
-	public int getNumeroDeWampus() {
-		return numeroDeWampus;
-	}
-
-	public void setNumeroDeWampus(int numeroDeWampus) {
-		this.numeroDeWampus = numeroDeWampus;
-	}
-
-	public int getNumeroDeMuros() {
-		return numeroDeMuros;
-	}
-
-	public void setNumeroDeMuros(int numeroDeMuros) {
-		this.numeroDeMuros = numeroDeMuros;
-	}
-
 	public int getNumeroDePozos() {
 		return numeroDePozos;
 	}
@@ -67,6 +52,22 @@ public class Tablero {
 
 	public void setCelda(Celda[][] celda) {
 		this.celda = celda;
+	}
+
+	public int getCoordenadaFilaJugador() {
+		return coordenadaFilaJugador;
+	}
+
+	public void setCoordenadaFilaJugador(int coordenadaFilaJugador) {
+		this.coordenadaFilaJugador = coordenadaFilaJugador;
+	}
+
+	public int getCoordenadaColumnaJugador() {
+		return coordenadaColumnaJugador;
+	}
+
+	public void setCoordenadaColumnaJugador(int coordenadaColumnaJugador) {
+		this.coordenadaColumnaJugador = coordenadaColumnaJugador;
 	}
 	
 }

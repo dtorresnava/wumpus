@@ -16,6 +16,15 @@ public class ControllMessage {
 	public static final String MENSAJE_NOMBRE = "Nombre: ";
 	public static final String MENSAJE_NUMERO_LANZAS = "Nº lanzas: ";
 	public static final String MENSAJE_NUMERO_POZOS = "Nº pozos: ";
+	public static final String MENSAJE_MOVIMIENTO = "Selecciona tu siguiente movimiento:";
+	public static final String MENSAJE_BRISA_DETECTADA = "Has detectado una brisa.";
+	public static final String MENSAJE_EDOR_DETECTADA = "Has detectado un edor.";
+	public static final String MENSAJE_ELEGIR_MOVIMIENTO = "¿Cual es tu siguiente movimiento?:";
+	public static final String MENSAJE_SLECCIONAR_IZQUIERDA = "Opción 1, ir a la izquierda.";
+	public static final String MENSAJE_SLECCIONAR_DERECHA = "Opción 2, ir a la derecha.";
+	public static final String MENSAJE_SLECCIONAR_ARRIBA = "Opción 3, ir arriba.";
+	public static final String MENSAJE_SLECCIONAR_ABAJO = "Opción 4, ir abajo.";
+	public static final String MENSAJE_SLECCIONAR_LANZAR = "Opción 5, lanzar la lanza.";
 	
 	public ControllMessage() {		
 		
