@@ -17,7 +17,9 @@ public class Wumpus {
 		boolean terminar = init();		
 		
 		if(terminar) {
-			System.out.println(mensaje.MENSJE_HASTERMINADO);
+			System.out.println("Has ganado");
+		}else {
+			System.out.println("Has perdido");
 		}
 	}
 	
