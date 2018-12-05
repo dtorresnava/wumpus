@@ -17,9 +17,9 @@ public class Wumpus {
 		boolean terminar = init();		
 		
 		if(terminar) {
-			System.out.println(mensaje.MENSAJE_PERDIDO);
-		}else {
 			System.out.println(mensaje.MENSAJE_GANADO);
+		}else {
+			System.out.println(mensaje.MENSAJE_PERDIDO);
 		}
 	}
 	

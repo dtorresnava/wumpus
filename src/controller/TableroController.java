@@ -28,7 +28,7 @@ public class TableroController {
 		tablero.setCelda(celda);
 	}
 
-	private void colocarOro(Tablero tablero, Celda[][] celda) {
+	public void colocarOro(Tablero tablero, Celda[][] celda) {
 		int fila = 0;
 		int columna = 0;
 		boolean oroHabilitado = false;
@@ -44,7 +44,7 @@ public class TableroController {
 		} while (oroHabilitado == false);
 	}
 
-	private void colocarJugador(Tablero tablero, Celda[][] celda) {
+	public void colocarJugador(Tablero tablero, Celda[][] celda) {
 		int fila = 0;
 		int columna = 0;
 		boolean jugadorHabilitado = false;
@@ -66,7 +66,7 @@ public class TableroController {
 		} while (jugadorHabilitado == false);
 	}
 
-	private void colocarWumpus(Tablero tablero, Celda[][] celda) {
+	public void colocarWumpus(Tablero tablero, Celda[][] celda) {
 		int fila = 0;
 		int columna = 0;
 		boolean wumpusHabilitado = false;
@@ -95,7 +95,7 @@ public class TableroController {
 			celda[fila][columna + 1].setEdorHabilitado(true);
 	}
 
-	private void introducirPozos(Tablero tablero, Celda celda[][]) {
+	public void introducirPozos(Tablero tablero, Celda celda[][]) {
 		int fila = 0;
 		int columna = 0;
 		for (int i = 0; i < tablero.getNumeroDePozos(); i++) {
@@ -109,7 +109,7 @@ public class TableroController {
 		colocarBrisa(tablero, celda);
 	}
 
-	private void colocarMuro(Tablero tablero, Celda[][] celda) {
+	public void colocarMuro(Tablero tablero, Celda[][] celda) {
 		int cont = NUMERO_MUROS;
 		int fila = 0;
 		int columna = 0;
