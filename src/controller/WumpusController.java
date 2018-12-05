@@ -208,7 +208,7 @@ public class WumpusController {
 			}
 			break;
 		case 4: // ir abajo
-			if (fila + 1 < 0) {
+			if (fila + 1 == tablero.getFila()) {
 				System.out.println(mensaje.MENSAJE_DIRECCION_ERRONEA);
 			} else {
 				tablero.getCelda()[fila][columna].setJugadorHabilitado(false);
@@ -281,10 +281,14 @@ public class WumpusController {
 	}
 
 	private void eliminarEdor(Tablero tablero, int fila, int columna) {
-		tablero.getCelda()[fila + 1][columna].setEdorHabilitado(false);
-		tablero.getCelda()[fila - 1][columna].setEdorHabilitado(false);
-		tablero.getCelda()[fila][columna + 1].setEdorHabilitado(false);
-		tablero.getCelda()[fila][columna - 1].setEdorHabilitado(false);
+		if (fila + 1 != tablero.getFila())
+			tablero.getCelda()[fila + 1][columna].setEdorHabilitado(false);
+		if (fila - 1 >= 0)
+			tablero.getCelda()[fila - 1][columna].setEdorHabilitado(false);
+		if (columna + 1 != tablero.getColumna())
+			tablero.getCelda()[fila][columna + 1].setEdorHabilitado(false);
+		if (columna - 1 >= 0)
+			tablero.getCelda()[fila][columna - 1].setEdorHabilitado(false);
 	}
 
 }
