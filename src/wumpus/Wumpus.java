@@ -17,9 +17,9 @@ public class Wumpus {
 		boolean terminar = init();		
 		
 		if(terminar) {
-			System.out.println("Has ganado");
+			System.out.println(mensaje.MENSAJE_PERDIDO);
 		}else {
-			System.out.println("Has perdido");
+			System.out.println(mensaje.MENSAJE_GANADO);
 		}
 	}
 	
@@ -36,7 +36,7 @@ public class Wumpus {
 		
 		TableroController construirTablero = new TableroController();		
 		construirTablero.construirTablero(tablero);
-		construirTablero.mostrarTablero(tablero);
+		//construirTablero.mostrarTablero(tablero);
 		
 		WumpusController jugarWumpus = new WumpusController();
 		salir = jugarWumpus.moverJugador(tablero, jugador);
@@ -66,6 +66,7 @@ public class Wumpus {
 		jugador.setNombre(entrada.nextLine());		
 		System.out.print(mensaje.MENSAJE_INTRODUCIR_NUMERO_LANZAS);		
 		jugador.setLanzas(entrada.nextInt());
+		jugador.setTieneOro(false);
 	}
 	
 	@SuppressWarnings("static-access")

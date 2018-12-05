@@ -37,7 +37,10 @@ public class ControllMessage {
 	public static final String MENSAJE_DIRECCION_ERRONEA = "No puedes moverte a esa posición.";
 	public static final String MENSAJE_WUMPUS = "El Wumpus te ha matado.";
 	public static final String MENSAJE_POZO = "Has caído en un pozo.";
-	
+	public static final String MENSAJE_ORO_DETECTADO = "El jugador percibe un brillo.";
+	public static final String MENSAJE_ORO_SALIDA = "Has encontrado el oro y llegado a la casilla de salida.";
+	public static final String MENSAJE_GANADO = "Has ganado";
+	public static final String MENSAJE_PERDIDO = "Has perdido";
 	public ControllMessage() {		
 		
 	}

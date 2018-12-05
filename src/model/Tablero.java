@@ -10,6 +10,9 @@ public class Tablero {
 	private int coordenadaFilaJugador;
 	private int coordenadaColumnaJugador;
 	
+	private int coordenadaFilaIni;
+	private int coordenadaColumnaIni;
+	
 	private Celda celda[][];
 	
 	public Tablero() {	
@@ -69,5 +72,22 @@ public class Tablero {
 	public void setCoordenadaColumnaJugador(int coordenadaColumnaJugador) {
 		this.coordenadaColumnaJugador = coordenadaColumnaJugador;
 	}
+
+	public int getCoordenadaFilaIni() {
+		return coordenadaFilaIni;
+	}
+
+	public void setCoordenadaFilaIni(int coordenadaFilaIni) {
+		this.coordenadaFilaIni = coordenadaFilaIni;
+	}
+
+	public int getCoordenadaColumnaIni() {
+		return coordenadaColumnaIni;
+	}
+
+	public void setCoordenadaColumnaIni(int coordenadaColumnaIni) {
+		this.coordenadaColumnaIni = coordenadaColumnaIni;
+	}
+	
 	
 }

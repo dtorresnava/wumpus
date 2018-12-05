@@ -16,6 +16,9 @@ public class JugadorTest {
 		
 		jugador.setLanzas(5);
 		assertEquals(5, jugador.getLanzas());
+		
+		jugador.setTieneOro(false);
+		assertEquals(false, jugador.isTieneOro());
 	}
 
 }

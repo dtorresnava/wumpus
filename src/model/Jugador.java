@@ -2,13 +2,8 @@ package model;
 
 public class Jugador {
 	
-	public static final int IZQUIERDA = 1;
-	public static final int DERECHA = 2;
-	public static final int ARRIBA = 3;
-	public static final int ABAJO = 4;
-	public static final int USAR_LANZA = 5;
-	
 	private String nombre;
+	private boolean tieneOro;
 	private int lanzas;
 		
 	public Jugador(String nombre) {
@@ -33,6 +28,13 @@ public class Jugador {
 	public void setLanzas(int flechas) {
 		this.lanzas = flechas;
 	}
-		
+
+	public boolean isTieneOro() {
+		return tieneOro;
+	}
+
+	public void setTieneOro(boolean tieneOro) {
+		this.tieneOro = tieneOro;
+	}
 	
 }

@@ -59,6 +59,9 @@ public class TableroController {
 				
 				tablero.setCoordenadaFilaJugador(fila);
 				tablero.setCoordenadaColumnaJugador(columna);
+				
+				tablero.setCoordenadaFilaIni(fila);
+				tablero.setCoordenadaColumnaIni(columna);
 			}
 		} while (jugadorHabilitado == false);
 	}
